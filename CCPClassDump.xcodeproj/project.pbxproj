@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		632217C519E6D18B008F2808 /* CCPClassDump.m in Sources */ = {isa = PBXBuildFile; fileRef = 632217B619E6D18B008F2808 /* CCPClassDump.m */; };
 		632217C619E6D18B008F2808 /* CCPClassDumpResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 632217B819E6D18B008F2808 /* CCPClassDumpResult.m */; };
-		632217C719E6D18B008F2808 /* CCPClassDumpResultFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 632217BB19E6D18B008F2808 /* CCPClassDumpResultFormatter.m */; };
+		632217C719E6D18B008F2808 /* CCPClassDumpDefaultResultFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 632217BB19E6D18B008F2808 /* CCPClassDumpDefaultResultFormatter.m */; };
 		632217C819E6D18B008F2808 /* CCPTypeFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 632217BD19E6D18B008F2808 /* CCPTypeFormatter.m */; };
 		632217C919E6D18B008F2808 /* CCPMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 632217C019E6D18B008F2808 /* CCPMethod.m */; };
 		632217CA19E6D18B008F2808 /* CCPProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 632217C219E6D18B008F2808 /* CCPProperty.m */; };
@@ -21,6 +21,7 @@
 		638105D919E6C3C40094D1C8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 638105D819E6C3C40094D1C8 /* Images.xcassets */; };
 		638105DC19E6C3C40094D1C8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 638105DA19E6C3C40094D1C8 /* LaunchScreen.xib */; };
 		638105E819E6C3C50094D1C8 /* CCPClassDumpTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 638105E719E6C3C50094D1C8 /* CCPClassDumpTests.m */; };
+		F5899CAA19E7A227003E6BF0 /* CCPClassDumpResultFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = F5899CA919E7A227003E6BF0 /* CCPClassDumpResultFormatter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +39,8 @@
 		632217B619E6D18B008F2808 /* CCPClassDump.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CCPClassDump.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		632217B719E6D18B008F2808 /* CCPClassDumpResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = CCPClassDumpResult.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		632217B819E6D18B008F2808 /* CCPClassDumpResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CCPClassDumpResult.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
-		632217BA19E6D18B008F2808 /* CCPClassDumpResultFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = CCPClassDumpResultFormatter.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
-		632217BB19E6D18B008F2808 /* CCPClassDumpResultFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CCPClassDumpResultFormatter.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		632217BA19E6D18B008F2808 /* CCPClassDumpDefaultResultFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = CCPClassDumpDefaultResultFormatter.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		632217BB19E6D18B008F2808 /* CCPClassDumpDefaultResultFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CCPClassDumpDefaultResultFormatter.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		632217BC19E6D18B008F2808 /* CCPTypeFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = CCPTypeFormatter.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		632217BD19E6D18B008F2808 /* CCPTypeFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CCPTypeFormatter.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		632217BF19E6D18B008F2808 /* CCPMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = CCPMethod.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
@@ -61,6 +62,8 @@
 		638105E119E6C3C40094D1C8 /* CCPClassDumpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CCPClassDumpTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		638105E619E6C3C40094D1C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		638105E719E6C3C50094D1C8 /* CCPClassDumpTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CCPClassDumpTests.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		F5899CA819E7A227003E6BF0 /* CCPClassDumpResultFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCPClassDumpResultFormatter.h; sourceTree = "<group>"; };
+		F5899CA919E7A227003E6BF0 /* CCPClassDumpResultFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCPClassDumpResultFormatter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +100,10 @@
 		632217B919E6D18B008F2808 /* Formatter */ = {
 			isa = PBXGroup;
 			children = (
-				632217BA19E6D18B008F2808 /* CCPClassDumpResultFormatter.h */,
-				632217BB19E6D18B008F2808 /* CCPClassDumpResultFormatter.m */,
+				632217BA19E6D18B008F2808 /* CCPClassDumpDefaultResultFormatter.h */,
+				632217BB19E6D18B008F2808 /* CCPClassDumpDefaultResultFormatter.m */,
+				F5899CA819E7A227003E6BF0 /* CCPClassDumpResultFormatter.h */,
+				F5899CA919E7A227003E6BF0 /* CCPClassDumpResultFormatter.m */,
 				632217BC19E6D18B008F2808 /* CCPTypeFormatter.h */,
 				632217BD19E6D18B008F2808 /* CCPTypeFormatter.m */,
 			);
@@ -286,8 +291,9 @@
 				632217C519E6D18B008F2808 /* CCPClassDump.m in Sources */,
 				632217CB19E6D18B008F2808 /* CCPVariableType.m in Sources */,
 				632217C919E6D18B008F2808 /* CCPMethod.m in Sources */,
+				F5899CAA19E7A227003E6BF0 /* CCPClassDumpResultFormatter.m in Sources */,
 				632217C819E6D18B008F2808 /* CCPTypeFormatter.m in Sources */,
-				632217C719E6D18B008F2808 /* CCPClassDumpResultFormatter.m in Sources */,
+				632217C719E6D18B008F2808 /* CCPClassDumpDefaultResultFormatter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
