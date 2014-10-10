@@ -25,6 +25,7 @@
 
     NSString *result = CCPStringFromClassDump([UITextField class]);
     [self.textView setText:result];
+    NSLog(@"%@", result);
 }
 
 
