@@ -1,7 +1,7 @@
 CCPClassDump
 ============
-CCPClassDump is a class to dump a class structure. It's useful to find out about
-an inner structure of system classes.
+CCPClassDump is a class to dump an Objective-C class structure.
+It's useful to find out about an inner structure of system classes.
 
 
 
