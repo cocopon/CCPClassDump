@@ -1,7 +1,7 @@
 CCPClassDump
 ============
 CCPClassDump is a class to dump a class structure. It's useful to find out about
-a structure of system private classes.
+an inner structure of system classes.
 
 
 
