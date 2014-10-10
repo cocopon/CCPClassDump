@@ -48,3 +48,9 @@ Output:
 ...
 @end
 ```
+
+
+
+License
+-------
+MIT License. See `LICENSE.txt` for more information.
