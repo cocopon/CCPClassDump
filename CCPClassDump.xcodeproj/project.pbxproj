@@ -22,6 +22,7 @@
 		638105DC19E6C3C40094D1C8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 638105DA19E6C3C40094D1C8 /* LaunchScreen.xib */; };
 		638105E819E6C3C50094D1C8 /* CCPClassDumpTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 638105E719E6C3C50094D1C8 /* CCPClassDumpTests.m */; };
 		F5899CAA19E7A227003E6BF0 /* CCPClassDumpResultFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = F5899CA919E7A227003E6BF0 /* CCPClassDumpResultFormatter.m */; };
+		F5899CAE19E7A4AB003E6BF0 /* CCPClassDumpUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F5899CAD19E7A4AB003E6BF0 /* CCPClassDumpUtil.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,8 @@
 		638105E719E6C3C50094D1C8 /* CCPClassDumpTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CCPClassDumpTests.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		F5899CA819E7A227003E6BF0 /* CCPClassDumpResultFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCPClassDumpResultFormatter.h; sourceTree = "<group>"; };
 		F5899CA919E7A227003E6BF0 /* CCPClassDumpResultFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCPClassDumpResultFormatter.m; sourceTree = "<group>"; };
+		F5899CAC19E7A4AB003E6BF0 /* CCPClassDumpUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCPClassDumpUtil.h; sourceTree = "<group>"; };
+		F5899CAD19E7A4AB003E6BF0 /* CCPClassDumpUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCPClassDumpUtil.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +96,7 @@
 				632217B819E6D18B008F2808 /* CCPClassDumpResult.m */,
 				632217B919E6D18B008F2808 /* Formatter */,
 				632217BE19E6D18B008F2808 /* Model */,
+				F5899CAB19E7A49E003E6BF0 /* Util */,
 			);
 			path = CCPClassDump;
 			sourceTree = "<group>";
@@ -181,6 +185,15 @@
 				638105E619E6C3C40094D1C8 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F5899CAB19E7A49E003E6BF0 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				F5899CAC19E7A4AB003E6BF0 /* CCPClassDumpUtil.h */,
+				F5899CAD19E7A4AB003E6BF0 /* CCPClassDumpUtil.m */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,6 +297,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				638105D419E6C3C30094D1C8 /* ViewController.m in Sources */,
+				F5899CAE19E7A4AB003E6BF0 /* CCPClassDumpUtil.m in Sources */,
 				632217C619E6D18B008F2808 /* CCPClassDumpResult.m in Sources */,
 				638105D119E6C3C30094D1C8 /* AppDelegate.m in Sources */,
 				638105CE19E6C3C30094D1C8 /* main.m in Sources */,

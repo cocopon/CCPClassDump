@@ -8,10 +8,6 @@
 
 #import "ViewController.h"
 #import "CCPClassDump.h"
-#import "CCPClassDumpDefaultResultFormatter.h"
-
-
-#define kTargetClass [UITextField class]
 
 
 @interface ViewController ()
@@ -26,10 +22,9 @@
 
 - (void)viewDidLoad {
 	[super viewDidLoad];
-	
-	CCPClassDumpResult *result = [CCPClassDump dumpClass:kTargetClass];
-	CCPClassDumpResultFormatter *formatter = [CCPClassDumpDefaultResultFormatter formatter];
-	[self.textView setText:[formatter stringFromResult:result]];
+
+    NSString *result = CCPStringFromClassDump([UITextField class]);
+    [self.textView setText:result];
 }
 
 

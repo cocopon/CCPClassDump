@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "CCPClassDumpUtil.h"
 
 
 @class CCPClassDumpResult;
