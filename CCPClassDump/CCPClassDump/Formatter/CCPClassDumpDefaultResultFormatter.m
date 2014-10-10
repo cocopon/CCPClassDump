@@ -111,11 +111,11 @@ static NSString *const kMethodSeparator = @":";
 
     [str appendString:[self prefixForResult:result]];
 
-    for (CCPMethod *method in [result classMethods]) {
-        [str appendString:[self stringFromClassMethod:method]];
-    }
     for (CCPProperty *prop in [result properties]) {
         [str appendString:[self stringFromProperty:prop]];
+    }
+    for (CCPMethod *method in [result classMethods]) {
+        [str appendString:[self stringFromClassMethod:method]];
     }
     for (CCPMethod *method in [result instanceMethods]) {
         [str appendString:[self stringFromInstanceMethod:method]];
