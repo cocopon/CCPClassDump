@@ -12,6 +12,7 @@
 @interface CCPProperty()
 
 @property (strong, nonatomic, readwrite) NSString *name;
+@property (strong, nonatomic, readwrite) NSString *attributesString;
 
 @end
 
@@ -19,16 +20,18 @@
 @implementation CCPProperty
 
 
-- (id)initWithName:(NSString*)name {
+- (instancetype)initWithName:(NSString*)name attributesString:(NSString*)attributes {
     if (self = [super init]) {
         [self setName:name];
+		[self setAttributesString:attributes];
     }
     return self;
 }
 
 
-+ (instancetype)propertyWithName:(NSString*)name {
-	return [[[self class] alloc] initWithName:name];
++ (instancetype)propertyWithName:(NSString*)name attributesString:(NSString*)attributes {
+	return [[[self class] alloc] initWithName:name
+							 attributesString:attributes];
 }
 
 

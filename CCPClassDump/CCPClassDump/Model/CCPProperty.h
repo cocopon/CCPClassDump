@@ -16,7 +16,8 @@
 
 // TODO: Support type and attributes
 @property (strong, nonatomic, readonly) NSString *name;
+@property (strong, nonatomic, readonly) NSString *attributesString;
 
-+ (instancetype)propertyWithName:(NSString*)name;
++ (instancetype)propertyWithName:(NSString*)name attributesString:(NSString*)attributes;
 
 @end

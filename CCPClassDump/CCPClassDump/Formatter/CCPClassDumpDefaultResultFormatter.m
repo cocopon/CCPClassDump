@@ -101,7 +101,8 @@ static NSString *const kMethodSeparator = @":";
 
 
 - (NSString*)stringFromProperty:(CCPProperty*)property {
-    return [NSString stringWithFormat:@"@property %@;\n",
+    return [NSString stringWithFormat:@"@property (%@) %@;\n",
+			[property attributesString],
             [property name]];
 }
 

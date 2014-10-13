@@ -107,8 +107,8 @@ static NSString *const kMethodSeparator = @":";
     unsigned int totalProperties;
     objc_property_t *cProps = class_copyPropertyList(klass, &totalProperties);
     objc_property_t *p = cProps;
-	const char *cName;
-	NSString *name;
+	const char *cName, *cAttrs;
+	NSString *name, *attrs;
     CCPProperty *prop;
     int i;
     for (i = 0; i < totalProperties; i++) {
@@ -116,8 +116,11 @@ static NSString *const kMethodSeparator = @":";
 //        type = NSStringFromCString(cType);
         cName = property_getName(*p);
         name = NSStringFromCString(cName);
+		cAttrs = property_getAttributes(*p);
+		attrs = NSStringFromCString(cAttrs);
 
-		prop = [CCPProperty propertyWithName:name];
+		prop = [CCPProperty propertyWithName:name
+							attributesString:attrs];
         [props addObject:prop];
         ++p;
     }
